@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Responsive Webpage</title>
+    <script>
+      // Smooth Scroll Function
+      function smoothScroll(target) {
+        document.getElementById(target).scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      width: 100%;
+    "
+  >
+    <!-- Navigation Bar -->
+    <nav
+    style="
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(90deg, #1f1f1f, #444);
+      padding: 15px 10px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      flex-wrap: wrap;
+    "
+  >
+    <!-- Brand Name -->
+    <h2
+      style="
+        color: white;
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: 'Arial', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        flex-shrink: 0;
+      "
+    >
+      Doodleblue
+    </h2>
+  
+    <!-- Navigation Links -->
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <a
+        href="javascript:void(0);"
+        onclick="smoothScroll('home')"
+        style="
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          padding: 10px 15px;
+          font-weight: 500;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          white-space: nowrap;
+        "
+        onmouseover="this.style.backgroundColor='#555'; this.style.transform='scale(1.1)';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';"
+      >
+        Home
+      </a>
+  
+      <a
+        href="javascript:void(0);"
+        onclick="smoothScroll('about')"
+        style="
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          padding: 10px 15px;
+          font-weight: 500;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          white-space: nowrap;
+        "
+        onmouseover="this.style.backgroundColor='#555'; this.style.transform='scale(1.1)';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';"
+      >
+        About
+      </a>
+  
+      <a
+        href="javascript:void(0);"
+        onclick="smoothScroll('services')"
+        style="
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          padding: 10px 15px;
+          font-weight: 500;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          white-space: nowrap;
+        "
+        onmouseover="this.style.backgroundColor='#555'; this.style.transform='scale(1.1)';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';"
+      >
+        Services
+      </a>
+  
+      <a
+        href="javascript:void(0);"
+        onclick="smoothScroll('contact')"
+        style="
+          color: white;
+          text-decoration: none;
+          font-size: 16px;
+          padding: 10px 15px;
+          padding-left: 20px;
+          font-weight: 500;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+          white-space: nowrap;
+        "
+        onmouseover="this.style.backgroundColor='#555'; this.style.transform='scale(1.1)';"
+        onmouseout="this.style.backgroundColor='transparent'; this.style.transform='scale(1)';"
+      >
+        Contact
+      </a>
+    </div>
+  </nav>
+  
+
+    <!-- Main Content -->
+    <main style="padding: 80px 20px; text-align: center">
+      <!-- Home Section -->
+      <section
+        id="home"
+        style="
+          position: relative;
+          height: 500px;
+          background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhXYkPAH7kJsAXNJ3DmlvkKpnY3uhTBDzRIw&s')
+            no-repeat center center/cover;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 50px 20px;
+        "
+      >
+        <h1
+          style="
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          "
+        >
+          Welcome to Doodleblue
+        </h1>
+
+        <p
+          style="
+            font-size: 20px;
+            max-width: 800px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+          "
+        >
+          We provide cutting-edge digital solutions to help your business grow.
+          Our team specializes in web development, UI/UX design, and mobile
+          applications to enhance your digital presence.
+        </p>
+
+        <p
+          style="
+            font-size: 18px;
+            max-width: 700px;
+            font-style: italic;
+            margin-top: 15px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+          "
+        >
+          "Empowering businesses with innovative technology and seamless
+          solutions."
+        </p>
+
+        <button
+          style="
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+          "
+          onmouseover="this.style.background='white'; this.style.color='black';"
+          onmouseout="this.style.background='rgba(255, 255, 255, 0.2)'; this.style.color='white';"
+        >
+          Explore More
+        </button>
+      </section>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 80px 20px;
+          background: #f4f4f4;
+        "
+      >
+        <!-- Card Container -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            max-width: 1450px;
+            width: 100%;
+            background: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            padding: 20px;
+          "
+        >
+          <!-- Image Section -->
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Mu7vQmqVcAePKgJnAmVg-1TiGXiWOK-Ezg&s"
+            alt="About Us Image"
+            style="
+              width: 40%;
+              height: auto;
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              object-fit: cover;
+            "
+          />
+
+          <!-- Content Section -->
+          <div style="width: 60%; padding: 20px; text-align: left">
+            <h2
+              style="
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #333;
+                text-align: center;
+              "
+            >
+              About Us
+            </h2>
+            <p style="font-size: 18px; color: #141313; line-height: 1.6">
+              ​Doodleblue Innovations is a digital strategy consulting boutique
+              that offers services such as UI/UX design, mobile engineering, web
+              design, and digital transformation solutions across the USA, UK,
+              and India. They cater to a diverse clientele, including global
+              brands, leading consultancies, startups, Fortune 500 companies,
+              and governments, aiming to deliver innovative IT solutions
+              globally
+            </p>
+            <p style="font-size: 18px; color: #141313; line-height: 1.6">
+              ​Doodleblue Innovations is a digital strategy consulting boutique
+              that offers services such as UI/UX design, mobile engineering, web
+              design, and digital transformation solutions across the USA, UK,
+              and India. They cater to a diverse clientele, including global
+              brands, leading consultancies, startups, Fortune 500 companies,
+              and governments, aiming to deliver innovative IT solutions
+              globally
+            </p>
+            <p style="font-size: 18px; color: #141313; line-height: 1.6">
+              ​Doodleblue Innovations is a digital strategy consulting boutique
+              that offers services such as UI/UX design, mobile engineering, web
+              design, and digital transformation solutions across the USA, UK,
+              and India. They cater to a diverse clientele, including global
+              brands, leading consultancies, startups, Fortune 500 companies,
+              and governments, aiming to deliver innovative IT solutions
+              globally
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section
+        id="services"
+        style="
+          width: 100%;
+          padding: 80px 20px;
+          background: #f8f9fa;
+          text-align: center;
+        "
+      >
+        <!-- Heading -->
+        <h2
+          style="
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+          "
+        >
+          Our Services
+        </h2>
+
+        <!-- Description -->
+        <p
+          style="
+            font-size: 18px;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+          "
+        >
+          Doodleblue Innovations offers a comprehensive suite of digital
+          services aimed at transforming businesses. Our key offerings include:
+        </p>
+
+        <!-- Services Grid -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+          "
+        >
+          <!-- Service Box 1 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1055/1055666.png"
+              alt="Digital Transformation"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              Digital Transformation
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We provide audits, strategy formulation, digital marketing, and
+              analytics to optimize your business operations.
+            </p>
+          </div>
+
+          <!-- Service Box 2 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3076/3076525.png"
+              alt="UI/UX Design"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              UI/UX & Design Thinking
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We specialize in branding, user experience strategies, and
+              creating engaging designs for web & mobile platforms.
+            </p>
+          </div>
+
+          <!-- Service Box 3 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/3303/3303893.png"
+              alt="Mobile Engineering"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              Mobile Engineering
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We develop mobile applications across platforms including iOS,
+              Android, React Native, and wearable devices.
+            </p>
+          </div>
+
+          <!-- Service Box 4 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/6874/6874528.png"
+              alt="Web Technology"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              Web Technology Development
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We build CMS, e-commerce platforms, and custom web applications
+              tailored to business needs.
+            </p>
+          </div>
+
+          <!-- Service Box 5 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1922/1922713.png"
+              alt="Innovation Tech"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              Innovation Technology
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We leverage AI, AR/VR, IoT, blockchain, and cybersecurity to drive
+              digital transformation.
+            </p>
+          </div>
+
+          <!-- Service Box 6 -->
+          <div
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            "
+            onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 15px rgba(0, 0, 0, 0.3)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 10px rgba(0, 0, 0, 0.2)';"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/1922/1922713.png"
+              alt="Innovation Tech"
+              style="width: 60px; margin-bottom: 15px"
+            />
+            <h3 style="font-size: 22px; color: #333; margin-bottom: 10px">
+              Innovation Technology
+            </h3>
+            <p style="font-size: 16px; color: #666">
+              We leverage AI, AR/VR, IoT, blockchain, and cybersecurity to drive
+              digital transformation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+          <!-- Left Side: Contact Form -->
+          <section
+            id="contact"
+            style="padding: 100px 0; background: #fff; width: 100%"
+          >
+          <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-600 mb-8">
+              Have questions or need assistance? Fill out the form below, and
+              we'll get back to you as soon as possible.
+            </p>
+          </div>
+            <div style="width: 90%; max-width: 1200px; margin: auto">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                "
+              >
+                <!-- Contact Form -->
+                <div style="flex: 1; min-width: 300px; padding: 20px">
+                  <h2 style="font-size: 32px; color: #333; margin-bottom: 10px">
+                    Contact Us
+                  </h2>
+                  <p style="color: #555; margin-bottom: 20px">
+                    Have questions? Reach out to us by filling the form below.
+                  </p>
+                  <form>
+                    <label
+                      for="fullname"
+                      style="
+                        display: block;
+                        font-weight: bold;
+                        margin: 10px 0 5px;
+                      "
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      id="fullname"
+                      name="fullname"
+                      placeholder="Enter your full name"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+                      "
+                    />
+
+                    <label
+                      for="email"
+                      style="
+                        display: block;
+                        font-weight: bold;
+                        margin: 10px 0 5px;
+                      "
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+                      "
+                    />
+
+                    <label
+                      for="message"
+                      style="
+                        display: block;
+                        font-weight: bold;
+                        margin: 10px 0 5px;
+                      "
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Type your message here..."
+                      rows="5"
+                      required
+                      style="
+                        width: 100%;
+                        padding: 10px;
+                        margin-bottom: 15px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        font-size: 16px;
+                      "
+                    ></textarea>
+
+                    <button
+                      type="submit"
+                      style="
+                        background: #007bff;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 18px;
+                        border-radius: 5px;
+                      "
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+
+                <!-- Contact Image -->
+                <div style="flex: 1; min-width: 300px; text-align: center">
+                  <img
+                    src="https://img.freepik.com/free-vector/contact-button-set-flat-design_23-2147608047.jpg?ga=GA1.1.1889367007.1733460537&semt=ais_hybrid"
+                    alt="Contact Us"
+                    style="width: 100%; max-width: 500px; border-radius: 10px"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Right Side: Image -->
+          
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="
+    background: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 30px 20px; 
+    font-size: 16px; 
+    line-height: 1.6;
+    border-top: 4px solid #007bff;">
+    
+    <div style="max-width: 1200px; margin: auto;">
+        <!-- Company Info -->
+        <p style="font-size: 20px; font-weight: bold; margin-bottom: 5px;">
+            &copy; 2025 Doodleblue | All Rights Reserved.
+        </p>
+        <p style="color: #bbb; font-size: 14px;">
+            Empowering businesses through technology and innovation.
+        </p>
+
+        <!-- Navigation Links -->
+        <nav style="margin: 20px 0;">
+            <a href="javascript:void(0);" onclick="smoothScroll('home')" 
+                style="color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s;">
+                Home
+            </a> |
+            <a href="javascript:void(0);" onclick="smoothScroll('about')" 
+                style="color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s;">
+                About
+            </a> |
+            <a href="javascript:void(0);" onclick="smoothScroll('services')" 
+                style="color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s;">
+                Services
+            </a> |
+            <a href="javascript:void(0);" onclick="smoothScroll('contact')" 
+                style="color: white; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s;">
+                Contact
+            </a>
+        </nav>
+
+        <!-- Social Media Links -->
+        <div style="margin-top: 15px;">
+            <a href="https://facebook.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
+                <img src="facebook-icon.png" alt="Facebook" style="width: 24px; vertical-align: middle;">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
+                <img src="twitter-icon.png" alt="Twitter" style="width: 24px; vertical-align: middle;">
+            </a>
+            <a href="https://linkedin.com" target="_blank" style="color: white; text-decoration: none; margin: 0 10px;">
+                <img src="linkedin-icon.png" alt="LinkedIn" style="width: 24px; vertical-align: middle;">
+            </a>
+        </div>
+    </div>
+</footer>
+
+  </body>
+</html>
